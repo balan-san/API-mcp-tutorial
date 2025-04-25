@@ -9,15 +9,49 @@
 <body>
     <header>
         <h1>Welcome to the API Tutorial</h1>
+        <p>Learn how to work with APIs and integrate them into your applications</p>
     </header>
     <main>
         <section>
-            <h2>Getting Started</h2>
-            <p>This is a simple example of how to use APIs in your projects.</p>
+            <h2>What are APIs?</h2>
+            <p>API stands for <strong>Application Programming Interface</strong>. APIs allow different software applications to communicate with each other. They define the methods and data formats that applications can use to request and exchange information.</p>
+            <p>APIs serve as bridges that enable different systems to work together, even if they were built using different technologies or programming languages.</p>
         </section>
+        
+        <section>
+            <h2>Common API Types</h2>
+            <ul>
+                <li><strong>REST APIs</strong>: Use HTTP methods (GET, POST, PUT, DELETE) to interact with resources</li>
+                <li><strong>GraphQL</strong>: A query language that allows clients to request exactly the data they need</li>
+                <li><strong>SOAP APIs</strong>: Use XML-based messaging protocol for exchanging structured information</li>
+                <li><strong>WebSocket APIs</strong>: Provide full-duplex communication channels over a single TCP connection</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>API Request Example</h2>
+            <pre><code>
+// Making a simple GET request using JavaScript fetch API
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+            </code></pre>
+        </section>
+        
         <section>
             <h2>Next Steps</h2>
-            <p>Follow along with our tutorial to learn more about working with APIs.</p>
+            <p>Follow along with our tutorial to learn more about working with APIs, including:</p>
+            <ul>
+                <li>Authentication methods (API keys, OAuth, JWT)</li>
+                <li>Handling API responses and errors</li>
+                <li>Rate limiting and optimization</li>
+                <li>Building your own API</li>
+            </ul>
         </section>
     </main>
     <footer>
